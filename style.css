@@ -1,0 +1,50 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+
+.banner {
+    height: 10%;
+    background-color: grey;
+    color: lightgray;
+}
+
+.game {
+    height: 80%;
+    background-color: darkgrey;
+    display: flex;
+}
+
+.footer {
+    height: 10%;
+    background-color: grey;
+}
+
+.frame {
+    position: relative;
+    border: solid 2px black;
+    width: 600px;
+    height :600px;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    outline: solid black 1px;
+}
+
+.alive {
+    background-color: black;
+}
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of life</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner">
+        Conway's Game of Life, mashallah ++ premium deluxe GOTY édition
+    </div>
+    <div class="game">
+        <div class="leftPanel">
+            <div id="frame" class="frame"></div>
+            Cliquez sur une cellule morte pour lui donner vie, et sur une cellule vivante pour la tuer. Appuyez sur start pour lancer la simulation.<br/>
+            <button id="startBtn">Start</button>   
+            <button id="resetBtn">Nettoyer</button>
+            <!-- <button id="exportBtn">Exporter Natif</button>   -->
+            <button id="exportJSONBtn">Exporter</button>  
+            <button id="importBtn">Importer</button>
+            <input id="importInput"></input>
+        </div>
+        <div class="rightPanel">
+            <div class="rules">
+                <h3>Les règles</h3>
+                <ul>
+                    <li>Si une cellule vivante a moins de 2 voisins vivants, elle meurt de souspopulation</li>
+                    <li>Si une cellule vivante a 2 ou 3 voisins vivants elle reste vivante</li>
+                    <li>Si une cellule vivante a plus de 3 voisins vivants, elle meurt de surpopulation</li>
+                    <li>Si une celulle morte a 3 voisins vivants, elle devient vivante par reproduction</li>
+                </ul>
+                <h3>Des exemples interessants</h3>
+                <button id="createOsc1">Créer un oscilateur</button>
+                <button id="createGlider">Créer un planeur</button>
+                <button id="createGliderGun">Créer un canon à planeur</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        Copyrighted under the swag law of not very intellectual property, 23/02/2024
+    </div>
+</body>
+</html>
+<script src="core.js"></script>
